@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: url(home-banner.jpg);
+
+}
+
+header {
+  height: 110px;
+  background-color: #2C2073;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  position: relative;
+}
+
+/* Logo and button spacing */
+.logo img {
+  display: block;
+}
+
+ul {
+  display: flex;
+  gap: 50px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+button {
+  width: 135px;
+  height: 40px;
+  color: #222222;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 20px;
+  background-color: rgb(154, 250, 183);
+  border: none;
+}
+
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 120px;
+}
+
+.img-hero img {
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 60px;
+  color: white;
+}
+
+p {
+  font-size: 16px;
+  color: white;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 420px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    width: 100%;
+    background-color: #2C2073;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .img-hero img {
+    width: 300px;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 40px;
+    padding: 15px;
+  }
+
+  p {
+    font-size: 18px;
+    padding: 15px;
+  }
+}

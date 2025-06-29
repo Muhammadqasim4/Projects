@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Grey+Qo&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+VN:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Style+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+  <div class="navbar">
+    <div class="logo">
+      <img src="https://preview.colorlib.com/theme/comodo/img/logo.png" width="138" height="50" alt="">
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="nav-links">
+      <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">GALLERY</a></li>
+        <li><a href="">PAGES</a></li>
+        <li><a href="">CONTACT</a></li>
+      </ul>
+    </div>
+
+    <div class="btn">
+      <button>JOIN US</button>
+    </div>
+  </div>
+</header>
+
+<main class="hero-section">
+  <div class="hero">
+    <div class="img-hero">
+      <img src="https://preview.colorlib.com/theme/comodo/img/banner/home-left.png" alt="">
+    </div>
+    <div class="content">
+      <h1>For All Occasion <br> HairStyle is a Must <br> Try Fashion</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <br> eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut <br> enim ad minim.</p>
+    </div>
+  </div>
+</main>
+
+<script>
+  function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>
